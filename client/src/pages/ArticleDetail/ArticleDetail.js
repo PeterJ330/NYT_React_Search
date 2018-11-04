@@ -4,12 +4,11 @@ import { Col, Row, Container } from "../../components/Grid";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 
-class Detail extends Component {
+class ArticleDetail extends Component {
   state = {
     article: {}
   };
-  // When this component mounts, grab the book with the _id of this.props.match.params.id
-  // e.g. localhost:3000/books/599dcb67f0f16317844583fc
+  // When component mounts, grab the article with the id of this.props.match.params.id
   componentDidMount() {
     API.getArticle(this.props.match.params.id)
       .then(res => this.setState({ article: res.data }))
@@ -23,8 +22,9 @@ class Detail extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {this.state.article.title} 
+                {/* {this.state.article.title}  */}
                 {/* by {this.state.article.author} */}
+                {this.state.article._id} 
               </h1>
             </Jumbotron>
           </Col>
@@ -49,4 +49,4 @@ class Detail extends Component {
   }
 }
 
-export default Detail;
+export default ArticleDetail;

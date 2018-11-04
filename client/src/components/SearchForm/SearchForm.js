@@ -18,14 +18,14 @@ const SearchForm = props => (
         <input
         onChange={props.handleInputChange}
         value={props.value}
-        name="startYear" type="text" className="form-control" placeholder="Start Year" id="startYear"
+        name="start_date" type="text" className="form-control" placeholder="Start Year" id="startDate"
       />
       <br />
       {/* endYear search field */}
       <input
         onChange={props.handleInputChange}
         value={props.value}
-        name="endYear" type="text" className="form-control" placeholder="End Year" id="endYear"
+        name="end_date" type="text" className="form-control" placeholder="End Year" id="endDate"
       />
       <br />
       <button

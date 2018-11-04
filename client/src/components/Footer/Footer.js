@@ -15,16 +15,3 @@ const Footer = () => {
 
   
 export default Footer;
-
-
-{/* <nav id="footer" className="navbar navbar-expand-lg navbar-dark bg-primary fixed-bottom">
-  <a className="navbar-brand" href="/">
-  <span>Back To Homepage</span>
-  </a>
-</nav>
-
-    );
-}
-
-  
-export default Footer; */}
