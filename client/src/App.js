@@ -1,22 +1,37 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Articles from "./pages/Articles";
-import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import ArticleSearch from "./pages/ArticleSearch";
+import ArticleDetail from "./pages/ArticleDetail";
+import ArticleDisplay from "./pages/ArticleDisplay";
+import NoMatch from "./pages/NoMatch";
+
+// const App = () => (
+
+//     <Router>
+//         <div>
+//             <Nav />
+//             <Switch>
+//                 <Route exact path="/" component={ArticleSearch} />
+//                 <Route exact path="/articles" component={ArticleDisplay} />
+//                 <Route exact path="/articles/:id" component={ArticleDetail} />
+//                 <Route component={NoMatch} />
+//             </Switch>
+//             <Footer />
+//         </div>
+//     </Router>
+// );
+
+// export default App;
 
 const App = () => (
-    <Router>
-        <div>
-            <Nav />
-            <Switch>
-                <Route exact path="/" component={Articles} />
-                <Route exact path="/articles" component={Articles} />
-                <Route exact path="/articles/:id" component={Detail} />
-                <Route component={NoMatch} />
-            </Switch>
-        </div>
-    </Router>
-);
-
+    <div>
+        <Nav />
+    <ArticleSearch />
+    {/* <ArticleDisplay /> */}
+    {/* <ArticleDetail /> */}
+    <Footer />
+    </div>
+)
 export default App;
