@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import SearchForm from "../../components/SearchForm/SearchForm";
+import ArticleSearch from "../ArticleSearch";
 
 class ArticleDisplay extends Component {
     state = {
@@ -9,7 +10,7 @@ class ArticleDisplay extends Component {
         end_date: "",
         date: "",
         url: "",
-        // snippet: "",
+        snippet: "",
         articles: []
       };
 
@@ -55,13 +56,16 @@ class ArticleDisplay extends Component {
       
     render() {
         return (
+            <div>
+                <ArticleSearch />
+            
             <div className="bg">                
                 <SearchForm
                     formSubmit = {this.formSubmit}
                     handleInputChange = {this.handleInputChange}
                 />
                 
-                <div className="container">
+                {/* <div className="container">
                 <div className="row">
                 <div className="col md-12">
 
@@ -83,9 +87,10 @@ class ArticleDisplay extends Component {
 
 
                 </div>
-            </div>
+            </div> */}
                   
                               
+            </div>
             </div>
             );
         }

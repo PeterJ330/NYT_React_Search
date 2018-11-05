@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchForm.css";
+// import SearchResults from "../SearchResults/SearchResults";
 // import Container from "../Container/Container";
 
 const SearchForm = props => (
@@ -36,6 +37,7 @@ const SearchForm = props => (
       </button>
     </div>
   </form>
+  {/* <SearchResults /> */}
   </div>
 );
 
