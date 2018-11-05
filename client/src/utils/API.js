@@ -6,7 +6,13 @@ const APIKEY = "&api-key=cab3f8a1a7e1493788e64d9a06520504";
 export default {
   search: function(topic,start_date, end_date) {
     // return axios.get(BASEURL + APIKEY + "&q=" +  topic + "&begin_date=" + start_date + "0101" + "&end_date=" + end_date + "1231");
-    return axios.get(BASEURL + APIKEY + "&q=" +  topic + "&begin_date=" + start_date + "0101" + "&end_date=" + end_date + "1231");
+    return axios.get(
+      BASEURL
+      + APIKEY
+      + "&q=" + topic
+      + "&begin_date=" + start_date + "0101"
+      + "&end_date=" + end_date + "1231"
+      );
   },
   // Gets all articles
   getArticles: function() {

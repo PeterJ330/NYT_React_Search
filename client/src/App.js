@@ -3,9 +3,10 @@ import React from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ArticleSearch from "./pages/ArticleSearch";
-import ArticleDetail from "./pages/ArticleDetail";
-import ArticleDisplay from "./pages/ArticleDisplay";
-import NoMatch from "./pages/NoMatch";
+// import SearchResults from "./components/SearchResults";
+// import ArticleDetail from "./pages/ArticleDetail";
+// import ArticleDisplay from "./pages/ArticleDisplay";
+// import NoMatch from "./pages/NoMatch";
 
 // const App = () => (
 
@@ -29,8 +30,6 @@ const App = () => (
     <div>
         <Nav />
     <ArticleSearch />
-    {/* <ArticleDisplay /> */}
-    {/* <ArticleDetail /> */}
     <Footer />
     </div>
 )
